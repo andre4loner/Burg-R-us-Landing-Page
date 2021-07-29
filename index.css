@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+  --green: rgba(0, 120, 70);
+  --red-fade: rgba(200, 0, 0, 0.7);
+  --red: rgba(200, 0, 0, 1);
+  --light-brown: rgba(145, 63, 63, 0.871);
+  --dark-brown: rgba(145, 63, 63, 1);
+  --blackish: rgba(50, 50, 0)
+}
+
+*, ::before, ::after {
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  color: var(--blackish);
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 100%;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(70% at right 50%);
+  background: linear-gradient(yellow, white);
+  transform: rotate(0deg);
+  z-index: -2;
+}
+a {
+ text-decoration: none; 
+}
+/* a:visited {
+  color: black;
+} */
+li {
+  list-style: none;
+}
+
+.nav {
+  padding: 0px 40px;
+  max-width: 2500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.nav img {
+  width: 80px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo p {
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: var(--dark-brown);
+}
+.nav-links {
+  display: flex;
+  margin-left: auto;
+}
+.nav-links .link {
+  padding: 0px 20px;
+}
+.nav-links .link a {
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition-duration: 300ms;
+}
+.nav-links .link a:hover {
+  color: var(--dark-brown);
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.welcome {
+  width: 80%;
+  max-width: 2000px;
+  margin: 75px auto;
+  padding-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid var(--dark-brown);
+}
+.welcome img {
+  width: 350px;
+  margin-left: 45px;
+}
+.welcome-text {
+  width: 20ch;
+  color: var(--blackish);
+}
+.welcome-text span {
+  color: var(--dark-brown);
+  font-size: 1.1em;
+}
+
+.hero {
+  padding: 50px;
+  display: flex;
+  width: 90%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50px;
+  box-shadow: 0px 5px 17.5px lightgrey; */
+}
+.hero-text {
+  width: 450px;
+}
+.hero-text .hero-header {
+  margin: 0px;
+  padding: 0px;
+  color: var(--dark-brown);
+}
+.hero-text p {
+  margin-bottom: 30px;
+  width: 40ch;
+}
+.hero-img img {
+  width: 450px;
+}
+.button {
+  padding: 10px 20px;
+  margin-top: 0px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background-color: var(--dark-brown);
+  color: white;
+}
+
+.hero2 {
+  font-size: 0.8rem;
+}
+.hero2 .hero-text {
+  width: 300px;
+}
+.hero2 .hero-header {
+  font-weight: 500;
+}
+.hero2-img {
+  width: 350px;
+}
+.hero2-img img {
+  width: 300px;
+}
+
+.services {
+  width: 80%;
+  max-width: 1500px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-header {
+  color: var(--dark-brown);
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.service-items {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.service-items .item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.item img {
+  height: 60px;
+  width: 100%;
+  color: var(--dark-brown);
+}
+.item .item-title {
+  margin-bottom: 0;
+  color: var(--dark-brown);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.item .item-body {
+  font-size: 0.9rem;
+}
+
+.location-section {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.locations-header {
+  color: var(--dark-brown);
+}
+.locations {
+  width: 70%;
+  max-width: 1500px;
+  margin-top: 40px;
+  display: flex;
+}
+.locations .locat {
+  width: 33.333%;
+  padding: 20px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--light-brown);
+}
+.locat .address-list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.locations li {
+  list-style: disc;
+  position: relative;
+  right: 10px;
+}
+.locat .locat-header {
+  font-size: 1.6rem;
+  margin: 0;
+}
+.locat .address {
+  padding: 10px 0px;
+  font-size: 0.8rem;
+}
+
+
+
+.footer {
+  margin-top: 75px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .copyright {
+  color: var(--light-brown);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
