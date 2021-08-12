@@ -190,7 +190,7 @@ li {
 }
 .item img {
   height: 60px;
-  width: 100%;
+  width: auto;
   color: var(--dark-brown);
 }
 .item .item-title {
